@@ -1,0 +1,1 @@
+Java –cp C:\Users\CybertekStudent\workspace\Jenkins_Git_demo\bin;C: selenium_libs\*;C:\Users\CybertekStudent\.p2\pool\plugins\*;org.testing.TestNG testing.xml
