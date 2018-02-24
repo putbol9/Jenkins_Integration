@@ -9,17 +9,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Selenium_Jenkins_Integration {
-
-	public static void main(String[] args) {
 		
-	
+		WebDriver driver;
 		@BeforeMethod
 		public void setUp() {
 			
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium_libs\\chromedriver.exe");
 		
-		System.setProperty("webdriver.chrome.driver", "C:\Selenium_libs\chromedriver.exe");
-		
-		WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		
 		driver.get("http://google.com");
 		
@@ -37,4 +34,4 @@ public class Selenium_Jenkins_Integration {
 		driver.quit();
 	}
 }
-}
+
